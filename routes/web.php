@@ -26,3 +26,5 @@ Route::resource('products', 'ProductController');
 Auth::routes(['register' => false]);
 
 Route::get('logout', 'Auth\LoginController@logout') -> name('logout');
+
+Route::resource('transactions','TransactionController');

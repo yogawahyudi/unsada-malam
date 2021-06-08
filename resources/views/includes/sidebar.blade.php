@@ -13,6 +13,10 @@
                     <li>
                         <a href="{{ route('products.create')}}"> <i class="menu-icon fa fa-spinner"></i>Tambah Barang </a>
                     </li>
+                    <li class="menu-title">TRANSAKSI</li><!-- /.menu-title -->
+                    <li>
+                        <a href="{{ route('transactions.index')}}"> <i class="menu-icon fa fa-list"></i>Lihat Transaksi </a>
+                    </li>
 
 
             </div><!-- /.navbar-collapse -->

@@ -13,10 +13,10 @@ class TransactionDetail extends Model
         'products_id'
     ];
 
-    protected $hiddwn = [];
+    protected $hidden = [];
 
-    public function details() {
-        return $this->hasMany(TransactionDetail::class, 'transaction_id', 'id');
+    public function transaction() {
+        return $this->belongsTo(Transaction::class, 'transaction_id', 'id');
     }
 
     public function product() {
